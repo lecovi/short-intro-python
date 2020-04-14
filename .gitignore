@@ -130,3 +130,6 @@ dmypy.json
 
 # sh stuff
 .ash_history
+
+# Python history
+.python_history
