@@ -1,47 +1,47 @@
 def imprimir_mensaje():
-        """Esta función sólo imprime un mensaje en pantalla.
-        """
-        print("Hola! Simplemente vine a imprimir esto")
-        print("Chau")
+    """Esta función sólo imprime un mensaje en pantalla.
+    """
+    print("Hola! Simplemente vine a imprimir esto")
+    print("Chau")
 
 def saludo(nombre, apellido):
-        """Recibe el nombre y apellido de una persona e imprime un saludo
-        personalizado.
-        """
-        print("Bienvenido {} {}".format(nombre, apellido))
+    """Recibe el nombre y apellido de una persona e imprime un saludo
+    personalizado.
+    """
+    print("Bienvenido {} {}".format(nombre, apellido))
 
 def saludo2(nombre, apellido, mensaje="Bienvenido"):
-        """Recibe el nombre y apellido de una persona e imprime un saludo 
-        personalizado.
-        Puede recibir un tercer argumento de texto que es lo que ante-
-        cede al nombre y al apellido de la persona.
-        """
-        print(mensaje+" "+nombre+" "+apellido)
+    """Recibe el nombre y apellido de una persona e imprime un saludo 
+    personalizado.
+    Puede recibir un tercer argumento de texto que es lo que ante-
+    cede al nombre y al apellido de la persona.
+    """
+    print(mensaje+" "+nombre+" "+apellido)
 
 def saludo3(nombre, *args, **kwargs):
-        """Imprime en pantalla el segundo argumento de texto recibido y
-        el nombre a continuación.
-        En la línea siguiente imprime el tercer argumento recibido.
-        Y para terminar imprime el mensaje pasado como despedida.
-        """
-        print(args[0]+" "+nombre)
-        print(args[1])
-        print(kwargs['despedida'])
+    """Imprime en pantalla el segundo argumento de texto recibido y
+    el nombre a continuación.
+    En la línea siguiente imprime el tercer argumento recibido.
+    Y para terminar imprime el mensaje pasado como despedida.
+    """
+    print(args[0]+" "+nombre)
+    print(args[1])
+    print(kwargs['despedida'])
 
 def incrementar(valor):
-        """Incrementa el valor recibido y lo imprime en pantalla.
-        Es importante destacar que no devuelve este valor.
-        Modifica el argumento por valor.
-        """
-        valor = valor + 1
-        print(valor)
+    """Incrementa el valor recibido y lo imprime en pantalla.
+    Es importante destacar que no devuelve este valor.
+    Modifica el argumento por valor.
+    """
+    valor = valor + 1
+    print(valor)
 
 def agregar(valor, lista):
-        """Agrega el valor a la lista pasada.
-        Es importante destacar que no devuelve ningún valor.
-        Modifica el argumento por referencia.
-        """
-        lista.append(valor)
+    """Agrega el valor a la lista pasada.
+    Es importante destacar que no devuelve ningún valor.
+    Modifica el argumento por referencia.
+    """
+    lista.append(valor)
 
 ## Para consultar el docstring escribimos el nombre de la función se-
 ## guido de un . y __doc__ dentro de un print. Por ejemplo:
@@ -85,4 +85,3 @@ print("El valor a agregar es: {}".format(valor))
 agregar(valor, lista)
 print("Ahora la lista es: {}".format(lista))
 print("-"*50)
-
